@@ -1,0 +1,147 @@
+#site{
+    padding: 16px;
+        .site__title{
+            z-index: 10000;
+            position: sticky;
+            top: 70px;
+            left: 0;
+            width: 70%;
+            height: 5vw;
+            font-size: 4vw;
+            font-weight: 900;
+            line-height: 1.6;
+            font-family: 900;
+            border-bottom: 0.4vw solid var(--black100);
+            text-transform: uppercase;
+            line-height: 1.6;
+            font-family: var(--mainKor-font);
+            margin-bottom: 10vh;
+            @media (max-width:800px) {
+                width: 100%;
+                line-height: 3vw;
+                font-size: 4vw;
+        
+            }
+            em{
+                margin-left: 10px;
+                font-size: 1.25rem;
+                font-weight: 400;
+                
+            }
+        }
+        .site__wrap{
+            .site__item{
+                height: 70vh;
+                display: flex;
+                @include flex-center;
+                flex-direction: column;
+                position: sticky;
+                left: 0;
+                &:nth-child(1){
+                    top: 180px;   
+                    background-color: var(--subBg100);
+                    @media (max-width:800px) {
+                        
+                    }
+                }
+                &:nth-child(2){
+                    background-color: var(--subBg200);
+                    top: 180px;
+                    @media (max-width:800px) {
+                        
+                    }
+                }
+                &:nth-child(3){
+                    top: 220px;
+                    background-color: var(--subBg300);
+                    @media (max-width:800px) {
+                        
+                    }
+                }
+                &:nth-child(4){
+                    top: 240px;
+                    background-color: var(--subBg400);
+                    @media (max-width:800px) {
+                        
+                    }
+                }
+
+               
+                .num{
+                    font-family: var(--mainNum-font);
+                    font-size: 5vw;
+                    line-height: 1;
+                    font-weight: 900;
+                    position: absolute;
+                    left: 1vw;
+                    top: 1vw;
+                    @media (max-width:800px) {
+                        font-size: 10vw;
+                    }
+                }
+                .text{
+                    font-size: 3rem;
+                    font-weight: 900;
+                    font-family: var(--mainEng-font);
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    line-height: 1;
+                    margin-bottom: 10px;
+                    @media (max-width:800px) {
+                        font-size: 4vw;
+                    }
+
+                }
+                .title{
+                    font-family: var(--mainKor-font);
+                    margin-bottom: 1rem;
+                    @media (max-width:800px) {
+                        font-size: 2vw;
+                    }
+                }
+                .btn{
+                a{
+                    font-size: 1rem;
+                    transition: all 0.3s;
+                    color: var(--black200);
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    margin: 0 2px;
+                    &:hover{
+                        color: var(--black);
+                    }
+                }
+                }
+                .info{
+                    display: flex;
+                    width: 98%;
+                    margin-left: 1%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 3%;
+                    justify-content: space-between;
+                    border-top: 1px solid var(--black);
+                    border-bottom: 1px solid var(--black);
+
+                    @media (max-width:800px) {
+                        flex-direction: column;
+                        align-items: start;
+                        width: 90%;
+                        margin-left: 5%;
+                        padding: 5px;
+                    }
+                    span{
+                        padding: 3px 0;
+                    text-transform: uppercase;
+                    font-family: var(--mainEng-font);
+                    font-size: 12px;
+                    
+                    }
+                }
+            }
+        }
+    }
