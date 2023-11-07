@@ -1,0 +1,115 @@
+#port{
+padding: 16px;
+}
+.port__inner{
+
+    .port__title{
+        font-family: var(--mainKor-font);
+        font-weight: 900;
+        font-size: 4vw;
+        line-height: 1.6;
+        text-transform: uppercase;
+        border-bottom: 0.4vw solid var(--black);
+        position: sticky;
+        top: 70px;
+        height: 5vw;
+        margin-bottom: 10vh;
+        text-indent: -0.3vw;
+        em{
+            font-family: var(--mainKor-font);
+            font-weight: 400;
+            font-size: 1.25rem;
+            margin-left: 10px;
+
+        }
+    }
+    .port__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        width: 7000px;
+        .port__items{
+            background-color: var(--subBg200);
+            height: 70vh;
+            width: 500px;
+            padding: 2.5rem;
+            margin-right: 20px;
+            &.p1 {
+                background-color: var(--subBg100);
+            }
+            &.p2 {
+                background-color: var(--subBg200);
+            }
+            &.p3 {
+                background-color: var(--subBg300);
+            }
+            &.p4 {
+                background-color: var(--subBg400);
+            }
+            &.p5 {
+                background-color: var(--subBg500);
+            }
+            &.p6 {
+                background-color: var(--subBg100);
+            }
+            &.p7 {
+                background-color: var(--subBg200);
+            }
+            &.p8 {
+                background-color: var(--subBg300);
+            }
+            &.p9 {
+                background-color: var(--subBg400);
+            }
+            &.p10 {
+                background-color: var(--subBg500);
+            }
+
+            .num{
+                font-family: var(--mainNum-font);
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            .img{
+                display: block;
+                margin-top: -20px;
+                transition: margin-top 0.3s;
+                Image{
+                    border-radius: 5%;
+                    filter: saturate(0%);
+                    transition: all 0.3s;
+                }
+                &:hover{
+                    margin-top: 0;
+                    Image{
+                        filter: saturate(100%);
+                    }
+                }
+                
+            }
+            .title{
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 0.8rem 0;
+                font-weight: 700;
+                color: var(--black100);
+                border-bottom: 0.3vw solid var(--black);
+                margin-bottom: 1rem;
+            }   
+            .desc{
+                font-size: 1rem;
+            }
+            .site{
+                border: 1px solid var(--black100);
+                display: block;
+                text-align: center;
+                padding: 0.625rem 1.5rem;
+                margin-top: 1.5rem;
+                transition: all 0.2s;
+                &:hover{
+                    background-color: var(--black100);
+                    color: var(--white);
+                }
+            }
+            }
+    }
+}
